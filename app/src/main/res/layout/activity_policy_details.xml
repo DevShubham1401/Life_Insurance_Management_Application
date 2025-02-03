@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/policy_background"
+    tools:context=".Policy_Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Policy 1: Jeevan Umang -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jeevan Umang"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIC Jeevan Umang is a life assurance plan in which the policy holder will be covered till he/she turns 100 years of age. The key benefit of this plan is that it comes with dual benefits of income and insurance protection to help the family of the insured in his/her absence. The assured benefits act as a strong financial backup in case of any emergency."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Know More"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/knowMoreButton1"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Now"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primaryColor"
+                    android:id="@+id/applyNowButton1"
+                    android:layout_marginTop="15dp"
+                    />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/jeevan_umang"
+                android:contentDescription="@string/jeevan_umang_image_desc" />
+        </LinearLayout>
+
+        <!-- Policy 2: Jeevan Shanti -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jeevan Shanti"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIC’s New Jeevan Shanti is an Annuity plan which has option of purchasing Deferred annuity and can be purchased only by paying a lump sum amount. The plan provides for annuity payments of a stated amount throughout the life time of the annuitant."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Know More"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/knowMoreButton2"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Now"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/applyNowButton2" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/jeevan_shanti"
+                android:contentDescription="@string/jeevan_shanti_image_desc" />
+        </LinearLayout>
+
+        <!-- Policy 3: Bima Jyoti -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bima Jyoti"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIC's Bima Jyoti is a Non-linked, Non-participating, Individual, Limited Premium Payment, Life Insurance Savings Plan. Under this plan, Guaranteed Additions shall accrue at the rate of Rs.50 per thousand Basic Sum Assured at the end of each policy year throughout the policy term. This plan will also be available through online application process."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Know More"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/knowMoreButton3"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Now"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/applyNowButton3" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/bima_jyoti"
+                android:contentDescription="@string/bima_jyoti_image_desc" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

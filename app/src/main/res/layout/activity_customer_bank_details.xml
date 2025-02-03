@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Customer_Bank_Details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ImageView for the background or logo -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shape" />
+
+        <!-- TextView for the title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="Customer Bank Details"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:textStyle="bold"/>
+
+
+        <!-- Bank Name -->
+        <EditText
+            android:id="@+id/et_bank_name"
+            android:background="@drawable/input"
+            android:hint="Bank Name"
+            android:paddingLeft="20dp"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:inputType="text" />
+
+        <!-- Account Number -->
+        <EditText
+            android:id="@+id/et_account_number"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:hint="Account Number"
+            android:inputType="number" />
+
+        <!-- IFSC Code -->
+        <EditText
+            android:id="@+id/et_ifsc_code"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:hint="Bank IFSC Code"
+            android:inputType="text" />
+
+        <!-- Upload Bank Document -->
+        <Button
+            android:id="@+id/btn_upload_bank_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Bank Document"
+            android:backgroundTint="#007bff"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Aadhar Number -->
+        <EditText
+            android:id="@+id/et_aadhar_number"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:hint="Aadhar Number"
+            android:inputType="number" />
+
+        <!-- Upload Aadhar Card -->
+        <Button
+            android:id="@+id/btn_upload_aadhar_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Aadhar Card"
+            android:backgroundTint="#007bff"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- PAN Number -->
+        <EditText
+            android:id="@+id/et_pan_number"
+            android:background="@drawable/input"
+            android:paddingLeft="20dp"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:hint="PAN Number"
+            android:inputType="text" />
+
+        <!-- Upload PAN Card -->
+        <Button
+            android:id="@+id/btn_upload_pan_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload PAN Card"
+            android:backgroundTint="#007bff"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Buttons: Submit and Clear -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="#007bff"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:backgroundTint="#007bff"
+                android:textColor="#ffffff"
+                android:onClick="clearFields"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note: GST will be included after approval of the policy."
+            android:paddingTop="16dp"
+            android:textSize="14sp"
+            android:textColor="#888" />
+
+    </LinearLayout>
+</ScrollView>

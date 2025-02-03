@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- Registration Form Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:layout_gravity="center"
+        android:padding="25dp"
+        android:elevation="5dp"
+        android:gravity="center">
+
+        <!-- Form Title -->
+        <TextView
+            android:id="@+id/formTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:background="@drawable/input"
+            android:inputType="textPersonName"
+            android:padding="8dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter E-mail here"
+            android:background="@drawable/input"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:layout_marginTop="15dp" />
+
+        <!-- RadioGroup for User type -->
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:orientation="horizontal">
+
+            <!--TextView for User Type-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Type:-  "
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agent"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+
+        <!-- Agent Fields (Initially Hidden) -->
+        <LinearLayout
+            android:id="@+id/agentFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <!-- Branch Name Input -->
+            <EditText
+                android:id="@+id/branchNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Branch Code"
+                android:background="@drawable/input"
+                android:padding="8dp" />
+
+            <!-- Agency Code Input -->
+            <EditText
+                android:id="@+id/agencyCodeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input"
+                android:hint="Agency Code"
+                android:padding="8dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Create Password"
+            android:background="@drawable/input"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:layout_marginTop="15dp" />
+
+        <!-- Re-enter Password Input -->
+        <EditText
+            android:id="@+id/repasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter Password"
+            android:background="@drawable/input"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:layout_marginTop="15dp" />
+
+        <!-- Sign Up and Clear Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sign Up"
+                android:backgroundTint="#007bff"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="10dp" />
+
+            <!-- Clear Button -->
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:backgroundTint="#007bff"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <!-- Link to Login -->
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login here"
+            android:textColor="#007bff"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:onClick="goToLogin" />
+    </LinearLayout>
+
+</LinearLayout>

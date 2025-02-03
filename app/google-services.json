@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "40712624143",
+    "firebase_url": "https://my-project-lima-4a888-default-rtdb.firebaseio.com",
+    "project_id": "my-project-lima-4a888",
+    "storage_bucket": "my-project-lima-4a888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40712624143:android:8f615bfb9032564bd56b7a",
+        "android_client_info": {
+          "package_name": "com.example.myproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCic49myShRtNrDpNyRVyCPb-xiUk6FBqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40712624143:android:ae3702a56712deb8d56b7a",
+        "android_client_info": {
+          "package_name": "com.example.myproject_lima"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCic49myShRtNrDpNyRVyCPb-xiUk6FBqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
