@@ -1,4 +1,5 @@
 Life Insurance Management System
+
 📘 Overview
 The Life Insurance Management System (LIMS) is a web-based application designed to streamline operations within the life insurance sector. It offers a secure and efficient platform for managing policies, clients, agents, and related processes. The system improves operational agility, enhances the customer experience, and helps insurers stay competitive in a rapidly evolving industry.
 
